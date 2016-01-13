@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Project Lion Framework</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+  <link rel="stylesheet" href="assets/css/project-style.css">
+  <script src="bower_components/sprockets-modernizr/modernizr.js"></script>
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+
+  <!-- Off Canvas Naviagtion -->
+  <link rel="stylesheet" href="assets/pushy.css">
+  <script src="assets/js/vendor/pushy.js"></script>
+</head>
+
+<body class="page">
+
+<div class="container">
+
+  <section>
+    <h3>Accordion Tabs Minimal</h3>
+    <code>html-includes/refills/_accordion-tabs-minimal.html</code>
+    <div class="clear">
+      <ul class="accordion-tabs-minimal">
+  <li class="tab-header-and-content">
+    <a href="#" class="tab-link is-active">Tab Item</a>
+    <section>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt pellentesque lorem, id suscipit dolor rutrum id. Morbi facilisis porta volutpat. Fusce adipiscing, mauris quis congue tincidunt, sapien purus suscipit odio, quis dictum odio tortor in sem. Ut sit amet libero nec orci mattis fringilla. Praesent eu ipsum in sapien tincidunt molestie sed ut magna. Nam accumsan dui at orci rhoncus pharetra tincidunt elit ullamcorper. Sed ac mauris ipsum. Nullam imperdiet sapien id purus pretium id aliquam mi ullamcorper.</p>
+    </section>
+  </li>
+  <li class="tab-header-and-content">
+    <a href="#" class="tab-link">Another Tab</a>
+    <section>
+      <p>Ut laoreet augue et neque pretium non sagittis nibh pulvinar. Etiam ornare tincidunt orci quis ultrices. Pellentesque ac sapien ac purus gravida ullamcorper. Duis rhoncus sodales lacus, vitae adipiscing tellus pharetra sed. Praesent bibendum lacus quis metus condimentum ac accumsan orci vulputate. Aenean fringilla massa vitae metus facilisis congue. Morbi placerat eros ac sapien semper pulvinar. Vestibulum facilisis, ligula a molestie venenatis, metus justo ullamcorper ipsum, congue aliquet dolor tortor eu neque. Sed imperdiet, nibh ut vestibulum tempor, nibh dui volutpat lacus, vel gravida magna justo sit amet quam. Quisque tincidunt ligula at nisl imperdiet sagittis. Morbi rutrum tempor arcu, non ultrices sem semper a. Aliquam quis sem mi.</p>
+    </section>
+  </li>
+  <li class="tab-header-and-content">
+    <a href="#" class="tab-link">Third</a>
+    <section>
+      <p>Donec mattis mauris gravida metus laoreet non rutrum sem viverra. Aenean nibh libero, viverra vel vestibulum in, porttitor ut sapien. Phasellus tempor lorem id justo ornare tincidunt. Nulla faucibus, purus eu placerat fermentum, velit mi iaculis nunc, bibendum tincidunt ipsum justo eu mauris. Nulla facilisi. Vestibulum vel lectus ac purus tempus suscipit nec sit amet eros. Nullam fringilla, enim eu lobortis dapibus, quam magna tincidunt nibh, sit amet imperdiet dolor justo congue turpis.</p>
+    </section>
+  </li>
+  <li class="tab-header-and-content">
+    <a href="#" class="tab-link">Last Item</a>
+    <section>
+      <p>Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus dui urna, mollis vel suscipit in, pharetra at ligula. Pellentesque a est vel est fermentum pellentesque sed sit amet dolor. Nunc in dapibus nibh. Aliquam erat volutpat. Phasellus vel dui sed nibh iaculis convallis id sit amet urna. Proin nec tellus quis justo consequat accumsan. Vivamus turpis enim, auctor eget placerat eget, aliquam ut sapien.</p
+    </section>
+  </li>
+</ul>
+
+<script>
+  $(document).ready(function () {
+    $('.accordion-tabs-minimal').each(function(index) {
+      $(this).children('li').first().children('a').addClass('is-active').next().addClass('is-open').show();
+    });
+
+    $('.accordion-tabs-minimal').on('click', 'li > a', function(event) {
+      if (!$(this).hasClass('is-active')) {
+        event.preventDefault();
+        var accordionTabs = $(this).closest('.accordion-tabs-minimal')
+        accordionTabs.find('.is-open').removeClass('is-open').hide();
+
+        $(this).next().toggleClass('is-open').toggle();
+        accordionTabs.find('.is-active').removeClass('is-active');
+        $(this).addClass('is-active');
+      } else {
+        event.preventDefault();
+      }
+    });
+  });
+</script>
+    </div>
+  </section>
+
+  <section>
+    <h3>Accordion Tabs</h3>
+    <code>html-includes/refills/_accordion-tabs.html</code>
+    <div class="clear">
+      <ul class="accordion-tabs">
+  <li class="tab-header-and-content">
+    <a href="#" class="is-active tab-link">Tab Item</a>
+    <section>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt pellentesque lorem, id suscipit dolor rutrum id. Morbi facilisis porta volutpat. Fusce adipiscing, mauris quis congue tincidunt, sapien purus suscipit odio, quis dictum odio tortor in sem. Ut sit amet libero nec orci mattis fringilla. Praesent eu ipsum in sapien tincidunt molestie sed ut magna. Nam accumsan dui at orci rhoncus pharetra tincidunt elit ullamcorper. Sed ac mauris ipsum. Nullam imperdiet sapien id purus pretium id aliquam mi ullamcorper.</p>
+    </section>
+  </li>
+  <li class="tab-header-and-content">
+    <a href="#" class="tab-link">Another Tab</a>
+    <section>
+      <p>Ut laoreet augue et neque pretium non sagittis nibh pulvinar. Etiam ornare tincidunt orci quis ultrices. Pellentesque ac sapien ac purus gravida ullamcorper. Duis rhoncus sodales lacus, vitae adipiscing tellus pharetra sed. Praesent bibendum lacus quis metus condimentum ac accumsan orci vulputate. Aenean fringilla massa vitae metus facilisis congue. Morbi placerat eros ac sapien semper pulvinar. Vestibulum facilisis, ligula a molestie venenatis, metus justo ullamcorper ipsum, congue aliquet dolor tortor eu neque. Sed imperdiet, nibh ut vestibulum tempor, nibh dui volutpat lacus, vel gravida magna justo sit amet quam. Quisque tincidunt ligula at nisl imperdiet sagittis. Morbi rutrum tempor arcu, non ultrices sem semper a. Aliquam quis sem mi.</p>
+    </section>
+  </li>
+  <li class="tab-header-and-content">
+    <a href="#" class="tab-link">Third</a>
+    <section>
+      <p>Donec mattis mauris gravida metus laoreet non rutrum sem viverra. Aenean nibh libero, viverra vel vestibulum in, porttitor ut sapien. Phasellus tempor lorem id justo ornare tincidunt. Nulla faucibus, purus eu placerat fermentum, velit mi iaculis nunc, bibendum tincidunt ipsum justo eu mauris. Nulla facilisi. Vestibulum vel lectus ac purus tempus suscipit nec sit amet eros. Nullam fringilla, enim eu lobortis dapibus, quam magna tincidunt nibh, sit amet imperdiet dolor justo congue turpis.</p>    
+    </section>
+  </li>
+  <li class="tab-header-and-content">
+    <a href="#" class="tab-link">Last Item</a>
+    <section>
+      <p>Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus dui urna, mollis vel suscipit in, pharetra at ligula. Pellentesque a est vel est fermentum pellentesque sed sit amet dolor. Nunc in dapibus nibh. Aliquam erat volutpat. Phasellus vel dui sed nibh iaculis convallis id sit amet urna. Proin nec tellus quis justo consequat accumsan. Vivamus turpis enim, auctor eget placerat eget, aliquam ut sapien.</p
+    </section>
+  </li>
+</ul>
+
+<script>
+  $(document).ready(function () {
+    $('.accordion-tabs').each(function(index) {
+      $(this).children('li').first().children('a').addClass('is-active').next().addClass('is-open').show();
+    });
+
+    $('.accordion-tabs').on('click', 'li > a', function(event) {
+      if (!$(this).hasClass('is-active')) {
+        event.preventDefault();
+        var accordionTabs = $(this).closest('.accordion-tabs')
+        accordionTabs.find('.is-open').removeClass('is-open').hide();
+
+        $(this).next().toggleClass('is-open').toggle();
+        accordionTabs.find('.is-active').removeClass('is-active');
+        $(this).addClass('is-active');
+      } else {
+        event.preventDefault();
+      }
+    });
+  });
+</script>
+    </div>
+  </section>
+
+  <section>
+    <h3>Accordion</h3>
+    <code>html-includes/refills/_accordion.html</code>
+    <div class="clear">
+      <ul class="accordion">
+  <li>
+    <a href="javascript:void(0)" class="js-accordion-trigger">Accordion Item</a>
+    <ul class="submenu">
+      <li>
+        <a href="javascript:void(0)">Sub Item 1</a>
+      </li>
+      <li>
+        <a href="javascript:void(0)">Sub Item 2</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="javascript:void(0)" class="js-accordion-trigger">Another Item</a>
+    <ul class="submenu">
+      <li>
+        <a href="javascript:void(0)">Sub Item 1</a>
+      </li>
+      <li>
+        <a href="javascript:void(0)">Sub Item 2</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<script>
+  jQuery('.js-accordion-trigger') // find the trigger
+    .bind('click', function(){
+      jQuery(this).parent().find('.submenu').slideToggle('fast');  // apply the toggle to the ul
+      jQuery(this).parent().toggleClass('is-expanded');
+      event.preventDefault();
+  });
+</script>
+    </div>
+  </section>
+
+  <section>
+    <h3>Badges</h3>
+    <code>html-includes/refills/_badges.html</code>
+    <div class="clear">
+      <div class="badges">
+	<span class="badge">4</span>
+	<span class="badge dark">4</span>
+	<span class="badge error">4</span>
+	<span class="badge notice">4</span>
+	<span class="badge success">4</span>
+</div>    </div>
+  </section>
+
+  <section>
+    <h3>Breadcrumbs</h3>
+    <code>html-includes/refills/_breadcrumbs.html</code>
+    <div class="clear">
+      <div class="breadcrumb">
+  <a href="javascript:void(0)">One</a>
+  <a href="javascript:void(0)">Two</a>
+  <a href="javascript:void(0)">Three</a>
+  <a href="javascript:void(0)">Four</a>
+  <a href="javascript:void(0)">Five</a>
+</div>
+    </div>
+  </section>
+
+  <section>
+    <h3>Button Group</h3>
+    <code>html-includes/refills/_button-group.html</code>
+    <div class="clear">
+      <div class="button-group">
+  <button class="active">Item</button>
+  <button>Button Group Item</button>
+  <button>Another Item</button>
+  <button>Last Item</button>
+</div>    </div>
+  </section>
+
+  <section>
+    <h3>Cards</h3>
+    <code>html-includes/refills/_cards.html</code>
+    <div class="clear">
+      <div class="cards">
+  <div class="card">
+    <div class="card-image">
+      <img src="https://raw.github.com/Magnus-G/Random/master/mountains.png" alt="">
+    </div>
+    <div class="card-header">
+      First Card
+    </div>
+    <div class="card-copy">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, officiis sunt neque facilis culpa molestiae necessitatibus delectus veniam provident.</p>
+    </div>
+    <div class="card-stats">
+      <ul>
+        <li>98<span>Items</span></li>
+        <li>298<span>Things</span></li>
+        <li>923<span>Objects</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="ribbon-wrapper"><div class="ribbon">RIBBON</div></div>
+    <div class="card-image">
+      <img src="https://raw.github.com/Magnus-G/Random/master/mountains-4.png" alt="">
+    </div>
+    <div class="card-header">
+      Another Card
+    </div>
+    <div class="card-copy">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, officiis sunt neque facilis culpa molestiae necessitatibus delectus veniam provident.</p>
+    </div>
+    <div class="card-stats">
+      <ul>
+        <li>98<span>Items</span></li>
+        <li>298<span>Things</span></li>
+        <li>923<span>Objects</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-image">
+      <img src="https://raw.github.com/Magnus-G/Random/master/mountains-3.png" alt="">
+    </div>
+    <div class="card-header">
+      The Last Card
+    </div>
+    <div class="card-copy">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, officiis sunt neque facilis culpa molestiae necessitatibus delectus veniam provident.</p>
+    </div>
+    <div class="card-stats">
+      <ul>
+        <li>98<span>Items</span></li>
+        <li>298<span>Things</span></li>
+        <li>923<span>Objects</span></li>
+      </ul>
+    </div>
+  </div>
+</div>    </div>
+  </section>
+
+  <section>
+    <h3>Comment</h3>
+    <code>html-includes/refills/_comment.html</code>
+    <div class="clear">
+      <div class="comment">
+  <div class="comment-image">
+    <img src="https://raw.github.com/Magnus-G/Random/master/placeholder_logo_1.png" alt="">
+  </div>
+  <div class="comment-content">
+    <h1>First Comment Title or Author</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, aspernatur, quia modi minima debitis tempora ducimus quam vero impedit alias earum nemo error tenetur sed.</p>
+    <p class="comment-detail">Date or details about this post</p>
+  </div>
+</div>
+
+<div class="comment">
+  <div class="comment-image">
+    <img src="https://raw.github.com/Magnus-G/Random/master/placeholder_logo_2.png" alt="">
+  </div>
+  <div class="comment-content">
+    <h1>Another One</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, aspernatur, quia modi minima debitis tempora ducimus quam vero impedit alias earum nemo error tenetur sed.</p>
+    <p class="comment-detail">Date or details about this post</p>
+  </div>
+</div>
+    </div>
+  </section>
+
+  <section>
+    <h3>Grid Items</h3>
+    <code>html-includes/refills/_grid-items.html</code>
+    <div class="clear">
+      <div class="grid-items">
+  <a href="javascript:void(0)" class="grid-item">
+    <img src="https://raw.github.com/Magnus-G/Random/master/placeholder_logo_1.png" alt="">
+    <h1>Grid Item</h1>
+    <p>Lorem ipsum dolor sit amet, elit. Rem, illum.</p>
+  </a>
+  <a href="javascript:void(0)" class="grid-item grid-item-big grid-item-image">
+    <img src="https://raw.github.com/Magnus-G/Random/master/placeholder_logo_2.png" alt="">
+    <h1>Grid Item With an Image</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, illum.</p>
+  </a>
+  <a href="javascript:void(0)" class="grid-item grid-item-big">
+    <img src="https://raw.github.com/Magnus-G/Random/master/placeholder_logo_3.png" alt="">
+    <h1>Another Wide Item</h1>
+    <p>Lorem ipsum consectetur dolor sit amet, consectetur adipisicing elit. Rem, illum.</p>
+  </a>
+  <a href="javascript:void(0)" class="grid-item">
+    <img src="https://raw.github.com/Magnus-G/Random/master/placeholder_logo_2.png" alt="">
+    <h1>Last Grid Item</h1>
+    <p>Lorem ipsum dolor sit amet, elit. Rem, illum.</p>
+  </a>
+  <a href="javascript:void(0)" class="grid-item">
+    <img src="https://raw.github.com/Magnus-G/Random/master/placeholder_logo_2.png" alt="">
+    <h1>Last Grid Item</h1>
+    <p>Lorem ipsum dolor sit amet, elit. Rem, illum.</p>
+  </a>
+  <a href="javascript:void(0)" class="grid-item">
+    <img src="https://raw.github.com/Magnus-G/Random/master/placeholder_logo_3.png" alt="">
+    <h1>A Grid Item</h1>
+    <p>Lorem ipsum dolor sit amet, elit. Rem, illum.</p>
+  </a>
+  <a href="javascript:void(0)" class="grid-item">
+    <img src="https://raw.github.com/Magnus-G/Random/master/placeholder_logo_1.png" alt="">
+    <h1>Item</h1>
+    <p>Lorem ipsum dolor sit amet, elit. Rem, illum.</p>
+  </a>
+</div>
+    </div>
+  </section>
+
+
+
+
+
+</div> <!-- END .container -->
+
+<footer>&copy; StaaG fashion 2014</footer>
+
+<script src="js/plugins.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='//www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-XXXXX-X');ga('send','pageview');
+</script>
+
+</body>
+</html>

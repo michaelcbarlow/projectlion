@@ -1,0 +1,101 @@
+.page {
+	font-weight: 300;
+	color: $staag-blue;
+}
+
+.container {
+  @include container();
+  min-width: 320px;
+}
+
+.inner-container {
+	@include container(800px);
+}
+
+header {
+  @include span(full);
+	margin-top: 16px;
+	margin-bottom: 10px;
+}
+
+.logo {
+  @include span(full);
+	text-align: center;
+  img {
+    margin-bottom: 10px;
+		max-height: 70px;
+  }
+}
+
+header nav {
+  @include span(8);
+	margin-left: span(2);
+  ul {
+    li {
+      @include span(1 of 6);
+      text-align: center;
+    }
+    li a {
+      display: block;
+			color: $staag-blue;
+			font-size: 12px;
+			text-transform: uppercase;
+			border-bottom: 1px solid white;
+      transition: all .3s;
+      i {
+        margin-bottom: 1px;
+      }
+			&:hover {
+				border-bottom: 1px solid $staag-blue;
+			}
+    }
+  }
+}
+
+.hero {
+	@include span(full);
+	height: 250px;
+	background: #ccc;
+}
+
+.main-content,
+.main-content-wide
+{
+  padding: 20px;
+  min-height: 500px;
+}
+
+.main-content {
+	@include span(9 last);
+}
+
+.main-content-wide {
+	@include span(full);
+}
+
+aside {
+	@include span(3);
+}
+
+footer {
+	text-align: center;
+	font-size: 12px;
+	font-weight: 200;
+}
+
+
+.last {
+  @include last;
+}
+
+
+// .box {
+//   @include gallery(4 of 12);
+//   background: RGBA(0, 82, 156, .5);
+//   margin-bottom: 20px;
+//   height: 200px;
+//
+//   @include media-query-bp($bp-l) {
+//     @include gallery(3 of 12);
+//   }
+// }

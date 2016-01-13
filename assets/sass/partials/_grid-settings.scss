@@ -1,0 +1,22 @@
+$susy: (
+  columns: 12,
+  gutters: 1/4,
+  math: fluid,
+  output: float,
+  gutter-position: after,
+  global-box-sizing: border-box,
+  use-custom: (rem: true
+  ),
+  // debug: (
+  //   image: show-columns,
+  //   color: rgba(24,181,247, .25),
+  //   output: overlay,
+  //   toggle: top right,
+  // ),
+);
+
+
+// output: float,
+// options float | isolate
+
+// gutter-position: after (before | after | split | inside | inside-static ),

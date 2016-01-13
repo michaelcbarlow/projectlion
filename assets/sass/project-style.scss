@@ -1,0 +1,58 @@
+
+// Media query support required?
+$media-queries-supported : true;
+
+// Opacity support in IE required via the proprietry ActiveX?
+// $ie8-opacity-supported 	 : false;
+
+* {box-sizing: border-box}
+
+// Choose between reset and normalise
+@import "vendor/normalize";
+
+// Import bourbon.io
+@import "../../bower_components/bourbon/app/assets/stylesheets/bourbon";
+
+// Import grid system
+@import "../../bower_components/susy/sass/susy";
+
+// Import grid settings
+@import "partials/grid-settings";
+
+// Import base grid from gridset
+// @import "vendor/gridset";
+
+// Import media query breakpoint mixin
+@import "partials/breakpoint-mixin";
+
+//Import breakpoint variables settings - names and sizes
+@import "partials/breakpoints";
+
+// Import font-awesome icon font
+@import "vendor/font-awesome/font-awesome";
+
+// Import bitter - a bourbon base starter style
+@import "bitters/base";
+
+// Import site specific styles
+@import "partials/glue";
+
+
+
+// Pattern Libraries
+// @import "vendor/refills"; // bourbon refils
+// @import "vendor/barebones/patterns"; // barebones
+
+
+
+@media print {
+  // @import "partials/base/print";
+}
+
+// 2x ----- may not be needed with the embed media queries
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+  // @import "partials/2x";
+}

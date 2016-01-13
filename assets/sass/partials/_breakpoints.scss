@@ -1,0 +1,13 @@
+// Media query breakpoints
+$bp-s 							: 30em;  		// 480px 	30em
+$bp-m 							: 37.5em;  	// 600px 	37.5em
+$bp-l 							: 48em;  		// 768px 	48em
+$bp-xl 							: 62em; 		// 992px 	62em
+$bp-xxl							: 86.375em; 	// 1382px	86.375em
+
+// Does your design needs a maximum width to maintain readable line lengths?
+$maxwidth						: 90em;
+
+// What is the class name that the media query mixin should use to target
+// browsers not supporting media queries?
+$no-mq-classname 				: ".lt-ie9";

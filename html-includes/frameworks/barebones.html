@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Project Lion Framework</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+  <link rel="stylesheet" href="assets/css/project-style.css">
+  <script src="bower_components/sprockets-modernizr/modernizr.js"></script>
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+
+  <!-- Off Canvas Naviagtion -->
+  <link rel="stylesheet" href="assets/pushy.css">
+  <script src="assets/js/vendor/pushy.js"></script>
+</head>
+
+<body class="page">
+
+<div class="container">
+
+  <section>
+    <h3>Form Button Primary</h3>
+    <code>html-includes/barebones/form-button-primary.html</code>
+    <div class="clear">
+      <button class="primary-button">Primary button</button>
+<input type="button" class="primary-button" value="Primary input button"/>
+<input type="submit" class="primary-button" value="Primary submit button"/>    </div>
+  </section>
+
+  <section>
+    <button class="button">Button</button>
+<input type="button" class="button" value="Input button"/>
+<input type="submit" class="button" value="Submit button"/>  </section>
+
+  <section>
+    <div class="button-group combined">
+	<input type="button" class="button" value="First button"/><!--
+ --><input type="button" class="button" value="Middle button"/><!--
+ --><input type="button" class="button" value="Last button"/>
+</div>  </section>
+
+  <section>
+    <div class="button-group">
+	<input type="submit" class="primary-button" value="Post comment"/>
+	<input type="button" class="button" value="Preview"/>
+	<a href="#">Cancel</a>
+</div>  </section>
+
+  <section>
+    <fieldset>
+	<legend>Legend</legend>
+	<p><small class="caption">Required fields are marked <abbr title="Required">*</abbr></small></p>
+</fieldset>  </section>
+
+  <section>
+    <p>
+	<label for="checkbox" class="check"><input id="checkbox" type="checkbox" class="checkbox" required/>Single checkbox</label>
+	<small class="caption">Note about this field</small>
+<p>  </section>
+
+  <section>
+    <p>
+	<label for="email">Email Address <abbr title="Required">*</abbr></label>
+	<input id="email" class="input" type="email" placeholder="you@example.com" required/>
+	<small class="caption">Note about this field</small>
+</p>  </section>
+
+  <section>
+    <p>
+	<label for="password">Password <abbr title="Required">*</abbr></label>
+	<input id="password" class="input" type="password" required/>
+	<small class="caption">Note about this field</small>
+</p>  </section>
+
+  <section>
+    <p>
+	<input type="search" class="input" placeholder="Search" /><input type="submit" class="button" value="Go" />
+</p>  </section>
+
+  <section>
+    <p>
+	<label for="text">Text Input <abbr title="Required">*</abbr></label>
+	<input id="text" class="input" type="text" required/>
+	<small class="caption">Note about this field</small>
+</p>  </section>
+
+  <section>
+    <p>
+	<label for="url">Web Address <abbr title="Required">*</abbr></label>
+	<input id="url" class="input" type="url" placeholder="http://example.com" required/>
+	<small class="caption">Note about this field</small>
+</p>  </section>
+
+  <section>
+    <p>
+	<label for="combined">Combined Input</label>
+	<span class="combined">
+		<input id="combined" class="input" type="text"/><!--
+	 --><input type="button" class="button" value="Input Button"/>
+	</span>
+</p>  </section>
+
+  <section>
+    <fieldset class="options">
+	<legend>Checkbox <abbr title="Required">*</abbr></legend>
+	<ul>
+		<li>
+			<label for="checkbox1" class="check"><input id="checkbox1" name="checkbox" type="checkbox" checked="checked"/>Choice A</label>
+			<small class="caption">Note about these option</small>
+		</li>
+		<li>
+			<label for="checkbox2" class="check"><input id="checkbox2" name="checkbox" type="checkbox"/>Choice B</label>
+			<small class="caption">Note about these option</small>
+		</li>
+		<li>
+			<label for="checkbox3" class="check"><input id="checkbox3" name="checkbox" type="checkbox"/>Choice C</label>
+			<small class="caption">Note about these option</small>
+		</li>
+	</ul>
+</fieldset>  </section>
+
+  <section>
+    <fieldset class="options">
+	<legend>Checkbox <abbr title="Required">*</abbr></legend>
+	<ul>
+		<li>
+			<label for="checkbox1" class="check"><input id="checkbox1" name="checkbox" type="checkbox" checked="checked"/>Choice A</label>
+		</li>
+		<li>
+			<label for="checkbox2" class="check"><input id="checkbox2" name="checkbox" type="checkbox"/>Choice B</label>
+		</li>
+		<li>
+			<label for="checkbox3" class="check"><input id="checkbox3" name="checkbox" type="checkbox"/>Choice C</label>
+		</li>
+	</ul>
+	<small class="caption">Note about these options</small>
+</fieldset>  </section>
+
+  <section>
+    <fieldset class="options">
+	<legend>Radio <abbr title="Required">*</abbr></legend>
+	<ul>
+		<li>
+			<label for="radio1" class="check"><input id="radio1" name="radio" type="radio" class="radio" checked="checked"/>Option 1</label>
+		</li>
+		<li>
+			<label for="radio2" class="check"><input id="radio2" name="radio" type="radio" class="radio"/>Option 2</label>
+		</li>
+		<li>
+			<label for="radio3" class="check"><input id="radio3" name="radio" type="radio" class="radio"/>Option 3</label>
+		</li>
+	</ul>
+	<small class="caption">Note about these options</small>
+</fieldset>  </section>
+
+  <section>
+    <p>
+	<label for="select">Select <abbr title="Required">*</abbr></label>
+	<select id="select" class="input">
+		<optgroup label="Option Group">
+			<option>Option One</option>
+			<option>Option Two</option>
+			<option>Option Three</option>
+		</optgroup>
+	</select>
+	<small class="caption">Note about this selection</small>
+</p>  </section>
+
+  <section>
+    <p>
+	<label for="textarea">Textarea <abbr title="Required">*</abbr></label>
+	<textarea id="textarea" class="input" rows="8" cols="32" required></textarea>
+	<small class="caption">Note about this field</small>
+</p>  </section>
+
+  <section>
+    <img class="circular" src="http://lorempixel.com/136/136/people/1" alt=""/>  </section>
+
+  <section>
+    <span class="framed circular">
+	<img src="http://lorempixel.com/136/136/people/7" alt=""/>
+</span>  </section>
+
+  <section>
+    <img class="framed" src="http://lorempixel.com/180/136/nature/1" alt=""/>  </section>
+
+  <section>
+    <code>html-includes/barbones/layout-module-details.html</code>
+    <div class="details module">
+	<details open>
+		<summary>How do I know which bone to choose?</summary>
+		<p>Whether you want to give your dog a nylon bone, a real bone, or a rawhide bone, choose a bone that matches your dog&#8217;s chewing rate and chewing habits. You may also wish to consider your dog's size and choose a bone that best fits his mouth and teeth.</p>
+	</details>
+	<details>
+		<summary>How do bones improve dental health?</summary>
+		<p>When your dog chews on bones, the chewing action scrapes away plaque, controls tartar build up, and helps stimulate gums. This diminishes bad breath, keeps teeth whiter, and reduces the risk of potentially serious dental problems.</p>
+	</details>
+	<details>
+		<summary>Are bones appropriate for older dogs?</summary>
+		<p>Provided that your older dog has healthy teeth, bones are extremely appropriate. Bones provide entertainment and mental stimulation that can be very beneficial to older dogs &#8211; especially those who are not extremely active.</p>
+	</details>
+</div><!--/.faq-->  </section>
+
+  <section>
+    <code>html-includes/barbones/layout-module-highlight.html</code>
+    <div class="module highlight">
+	<h2 class="h">This is a highlighted area of content.</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</div><!--/.module-->  </section>
+
+  <section>
+    <code>html-includes/barbones/layout-module-mark.html</code>
+    <div class="module mark">
+	<h2 class="h">This is a marked area of content.</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</div><!--/.module-->  </section>
+
+  <section>
+    <code>html-includes/barbones/layout-module-notice-failure.html</code>
+    <div class="module failure-notice">
+	<h2 class="h">This is a notification of a failed action or event.</h2>
+	<p>Please complete the following required fields:</p>
+	<ul>
+		<li>Name</li>
+		<li>Date of birth</li>
+	</ul>
+</div><!--/.failure-notice-->  </section>
+
+  <section>
+    <code>html-includes/barbones/layout-module-notice-success.html</code>
+    <div class="module success-notice">
+	<h2 class="h">This is a notification of a successful action or event.</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</div><!--/.success-notice-->  </section>
+
+  <section>
+    <code>html-includes/barbones/layout-module-notice.html</code>
+    <div class="module notice">
+	<h2 class="h">This is a general notification.</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</div><!--/.notice-->  </section>
+
+  <section>
+    <code>html-includes/barbones/layout-module.html</code>
+    <div class="module">
+	<h2 class="h">This is an area of content.</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</div><!--/.module-->  </section>
+
+  <section>
+    <code>html-includes/barbones/layout-pull-left.html</code>
+    <p><img class="pull-left" src="http://lorempixel.com/180/136/nature/2" alt="" />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit.</p>  </section>
+
+  <section>
+    <code>html-includes/barbones/layout-pull-right.html</code>
+    <p><img class="pull-right" src="http://lorempixel.com/180/136/nature/3" alt="" />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit.</p>  </section>
+
+  <section>
+    <code>html-includes/barbones/link-button-primary.html</code>
+    <a href="#" class="primary-button">Primary Link Button</a>  </section>
+
+  <section>
+    <code>html-includes/barbones/link-button.html</code>
+    <a href="#" class="button">Link Button</a>  </section>
+
+  <section>
+    <code>html-includes/barbones/link-rel-external.html</code>
+    <a href="#" rel="external">External link</a>  </section>
+
+  <section>
+    <code>html-includes/barbones/link-rel-tag.html</code>
+    <a href="#" rel="tag">Tag name</a>  </section>
+
+  <section>
+    <code>html-includes/barbones/link-tip.html</code>
+    <a href="#" class="tip" data-tip="Lorem ipsum dolor sit amet consectetur adipiscing elit. Donec a diam lectus sed sit amet ipsum mauris.">Hover to reveal a tooltip</a>  </section>
+
+  <section>
+    <code>html-includes/barbones/list-articles-img.html</code>
+    <ol class="articles">
+	<li><a href="#">
+		<article class="module">
+			<img class="pull-left" src="http://lorempixel.com/240/180/city/4" alt=""/>
+			<h1 class="h">Defiant North Korea in rocket success</h1>
+			<p class="caption"><time pubdate datetime="2012-12-12T19:10-00:00">12 December 2012</time></p>
+			<p>North Korea successfully launches a long-range rocket to put a satellite into space, as neighbours accuse it of a disguised missile test.</p>
+		</article>
+	</a></li>
+	<li><a href="#">
+		<article class="module">
+			<img class="pull-left" src="http://lorempixel.com/240/180/city/5" alt=""/>
+			<h1 class="h">Big decline in UK unemployment</h1>
+			<p class="caption"><time pubdate datetime="2012-12-12T18:10-00:00">12 December 2012</time></p>
+			<p>The number of people out of work fell by 82,000 between August and October, to 2.51 million, official figures show.</p>
+		</article>
+	</a></li>
+	<li><a href="#">
+		<article class="module">
+			<img class="pull-left" src="http://lorempixel.com/240/180/city/6" alt=""/>
+			<h1 class="h">Sitar maestro Ravi Shankar dies</h1>
+			<p class="caption"><time pubdate datetime="2012-12-12T17:10-00:00">12 December 2012</time></p>
+			<p>Sitar player Ravi Shankar, who popularised Indian music around the world, dies in hospital in the United States at the age of 92.</p>
+		</article>
+	</a></li>
+</ol><!--/.articles-->  </section>
+
+  <section>
+    <code>html-includes/barbones/list-articles.html</code>
+    <ol class="articles">
+	<li><a href="#">
+		<article class="module">
+			<h1 class="h">Defiant North Korea in rocket success</h1>
+			<p class="caption"><time pubdate datetime="2012-12-12T19:10-00:00">12 December 2012</time></p>
+			<p>North Korea successfully launches a long-range rocket to put a satellite into space, as neighbours accuse it of a disguised missile test.</p>
+		</article>
+	</a></li>
+	<li><a href="#">
+		<article class="module">
+			<h1 class="h">Big decline in UK unemployment</h1>
+			<p class="caption"><time pubdate datetime="2012-12-12T18:10-00:00">12 December 2012</time></p>
+			<p>The number of people out of work fell by 82,000 between August and October, to 2.51 million, official figures show.</p>
+		</article>
+	</a></li>
+	<li><a href="#">
+		<article class="module">
+			<h1 class="h">Sitar maestro Ravi Shankar dies</h1>
+			<p class="caption"><time pubdate datetime="2012-12-12T17:10-00:00">12 December 2012</time></p>
+			<p>Sitar player Ravi Shankar, who popularised Indian music around the world, dies in hospital in the United States at the age of 92.</p>
+		</article>
+	</a></li>
+</ol><!--/.articles-->  </section>
+
+  <section>
+    <code>html-includes/barbones/list-code.html</code>
+    <ol class="code">
+	<li><code>&#60;?php</code></li>
+	<li class="tab1"><code>echo 'Hello World!'; <span class="comment">// print 'Hello World'</span></code></li>
+	<li><code>?&#62;</code></li>
+</ol><!--/.code-->  </section>
+
+  <section>
+    <code>html-includes/barbones/list-metadata.html</code>
+    <dl class="metadata">
+	<dt>Published</dt>
+	<dd><time datetime="1963-03-27T12:00Z">27 March 1963</time></dd>
+	<dt>Author</dt>
+	<dd>Richard Beeching</dd>
+	<dt>Policy Area</dt>
+	<dd>Transport</dd>
+</dl><!--/.metadata-->  </section>
+
+  <section>
+    <code>html-includes/barbones/list-progress.html</code>
+    <ol class="progress">
+	<li class="is-active">Lorem dolor</li>
+	<li>Consectetur</li>
+	<li>Adipisicin</li>
+	<li>Eiusmod</li>
+</ol><!--/.progress-->
+
+<ol class="progress">
+	<li class="completed"><a href="#">Lorem dolor</a></li>
+	<li class="is-active">Consectetur</li>
+	<li>Adipisicin</li>
+	<li>Eiusmod</li>
+</ol><!--/.progress-->
+
+<ol class="progress">
+	<li class="completed"><a href="#">Lorem dolor</a></li>
+	<li class="completed"><a href="#">Consectetur</a></li>
+	<li class="completed"><a href="#">Adipisicin</a></li>
+	<li class="is-active">Eiusmod</li>
+</ol><!--/.progress-->  </section>
+
+  <section>
+    <code>html-includes/barbones/list-stats.html</code>
+    <ul class="stats">
+	<li><a href="#">1,234 <span>lorem</span></a></li>
+	<li><a href="#">567 <span>ipsum</span></a></li>
+	<li><a href="#">23,456 <span>dolor</span></a></li>
+</ul><!--/.stats-->  </section>
+
+  <section>
+    <code>html-includes/barbones/list-tags.html</code>
+    <ol class="tags">
+	<li><a href="#" rel="tag" data-rank="1">Clavicle</a></li>
+	<li><a href="#" rel="tag" data-rank="4">Ethmoid</a></li>
+	<li><a href="#" rel="tag" data-rank="6">Frontal</a></li>
+	<li><a href="#" rel="tag" data-rank="2">Incus</a></li>
+	<li><a href="#" rel="tag" data-rank="2">Lacrimal</a></li>
+	<li><a href="#" rel="tag" data-rank="2">Malleus</a></li>
+	<li><a href="#" rel="tag" data-rank="3">Mandible</a></li>
+	<li><a href="#" rel="tag" data-rank="3">Maxilla</a></li>
+	<li><a href="#" rel="tag" data-rank="3">Palatine</a></li>
+	<li><a href="#" rel="tag" data-rank="5">Parietal</a></li>
+	<li><a href="#" rel="tag" data-rank="4">Occipital</a></li>
+	<li><a href="#" rel="tag" data-rank="1">Ribs</a></li>
+	<li><a href="#" rel="tag" data-rank="1">Scapula</a></li>
+	<li><a href="#" rel="tag" data-rank="4">Sphenoid</a></li>
+	<li><a href="#" rel="tag" data-rank="1">Stapes</a></li>
+	<li><a href="#" rel="tag" data-rank="1">Sternum</a></li>
+	<li><a href="#" rel="tag" data-rank="5">Temporal</a></li>
+	<li><a href="#" rel="tag" data-rank="2">Vomer</a></li>
+	<li><a href="#" rel="tag" data-rank="2">Vomer</a></li>
+	<li><a href="#" rel="tag" data-rank="3">Zygomatic</a></li>
+</ol><!--/.tags-->  </section>
+
+  <section>
+    <code>html-includes/barbones/navigation-breadcrumb.html</code>
+    <nav role="navigation" class="breadcrumb-nav">
+	<a href="#">Lorem section</a> /
+	<a href="#">Dolor section</a> /
+	<a href="#">Ipsum section</a> /
+	<strong class="is-active">Current section</strong>
+</nav><!--/.breadcrumb-nav-->  </section>
+
+
+  <section>
+    <code>html-includes/barbones/navigation-page.html</code>
+    <nav role="navigation" class="page-nav">
+	<ul>
+		<li><a href="#" rel="prev">Previous</a></li>
+		<li><a href="#" class="is-active">1</a></li>
+		<li><a href="#">2</a></li>
+		<li><a href="#">3</a></li>
+		<li><a href="#" rel="next">Next</a></li>
+	</ul>
+</nav><!--/.page-nav-->  </section>
+
+  <section>
+    <code>html-includes/barbones/navigation-tabbed.html</code>
+    <nav role="navigation" class="tabbed-nav">
+	<ul>
+		<li><a href="#" class="is-active">Active tab</a></li>
+		<li><a href="#">Lorem tab</a></li>
+		<li><a href="#">Ipsum tab</a></li>
+		<li><a href="#">Dolor tab</a></li>
+	</ul>
+</nav><!--/.tabbed-nav-->  </section>
+
+  <section>
+    <code>html-includes/barbones/navigation-vertical.html</code>
+    <nav role="navigation" class="vertical-nav">
+	<ul>
+		<li><a href="#" class="is-active">Active tab</a></li>
+		<li><a href="#">Lorem tab</a></li>
+		<li><a href="#">Ipsum tab</a></li>
+		<li><a href="#">Dolor tab</a></li>
+	</ul>
+</nav><!--/.vertical-nav-->  </section>
+
+  <section>
+    <code>html-includes/barbones/navigation.html</code>
+    <nav role="navigation" class="nav">
+	<ul>
+		<li><a href="#">Lorem link</a></li>
+		<li><a href="#">Ipsum link</a></li>
+		<li><a href="#">Dolor link</a></li>
+	</ul>
+</nav><!--/.nav-->  </section>
+
+  <section>
+    <code>html-includes/barbones/text-caption.html</code>
+    <p class="caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>  </section>
+
+  <section>
+    <code>html-includes/barbones/text-lede.html</code>
+    <p class="lede">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>  </section>
+
+</div> <!-- END .container -->
+
+<footer>&copy; StaaG fashion 2014</footer>
+
+<script src="js/plugins.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='//www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-XXXXX-X');ga('send','pageview');
+</script>
+
+</body>
+</html>
